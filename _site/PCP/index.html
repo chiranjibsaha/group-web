@@ -1,0 +1,408 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.16.3 by Michael Rose
+  Copyright 2013-2019 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>Poisson Cluster Process: Theories and Application in Wireless Network Models - Stochastic Geometry</title>
+<meta name="description" content="This page maintains our progress on the Poisson cluster process (PCP)-based modeling and analysis of cellular networks.">
+
+
+  <meta name="author" content="Chiranjib Saha">
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="Stochastic Geometry">
+<meta property="og:title" content="Poisson Cluster Process: Theories and Application in Wireless Network Models">
+<meta property="og:url" content="http://localhost:4000/PCP/">
+
+
+  <meta property="og:description" content="This page maintains our progress on the Poisson cluster process (PCP)-based modeling and analysis of cellular networks.">
+
+
+
+
+
+
+
+  <meta property="article:published_time" content="2016-07-20T00:00:00-05:00">
+
+
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="http://localhost:4000/PCP/">
+
+
+
+
+
+
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Harpreet S. Dhillon",
+      "url": "http://localhost:4000",
+      "sameAs": null
+    }
+  </script>
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+<link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Stochastic Geometry Feed">
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+
+<!--[if IE ]>
+  <style>
+    /* old IE unsupported flexbox fixes */
+    .greedy-nav .site-title {
+      padding-right: 3em;
+    }
+    .greedy-nav button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+    }
+  </style>
+<![endif]-->
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single wide">
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+        <a class="site-title" href="/">Stochastic Geometry</a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/" >Quick-Start Guide</a>
+            </li></ul>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+
+
+<div itemscope itemtype="https://schema.org/Person">
+
+  
+    <div class="author__avatar">
+      
+
+      
+        <img src="/assets/images/chiranjib1.jpg" alt="Chiranjib Saha" itemprop="image">
+      
+    </div>
+  
+
+  <div class="author__content">
+    
+      <h3 class="author__name" itemprop="name">Chiranjib Saha</h3>
+    
+    
+      <p class="author__bio" itemprop="description">
+        Joined Wireless@VT as a PhD student in 2015. Interests: stochastic geometry, millimeter waves commun., machine learning.
+      </p>
+    
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">Follow</button>
+    <ul class="author__urls social-icons">
+      
+
+      
+        
+          
+            <li><a href="mailto:csaha@vt.edu" rel="nofollow noopener noreferrer"><i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i> Email</a></li>
+          
+        
+          
+            <li><a href="https://chiranjibsaha.github.io" rel="nofollow noopener noreferrer"><i class="fas fa-fw fa-link" aria-hidden="true"></i> Website</a></li>
+          
+        
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      <!--
+  <li>
+    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs" rel="nofollow noopener noreferrer">
+      <i class="fas fa-fw" aria-hidden="true"></i> Custom Social Profile Link
+    </a>
+  </li>
+-->
+    </ul>
+  </div>
+</div>
+
+  
+  </div>
+
+
+  <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Poisson Cluster Process: Theories and Application in Wireless Network Models">
+    <meta itemprop="description" content="This page maintains our progress on the Poisson cluster process (PCP)-based modeling and analysis of cellular networks.">
+    <meta itemprop="datePublished" content="July 20, 2016">
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title" itemprop="headline">Poisson Cluster Process: Theories and Application in Wireless Network Models
+</h1>
+          
+            <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  2 minute read
+</p>
+          
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        
+        <p>This page maintains our progress on the Poisson cluster process (PCP)-based modeling and analysis of cellular networks.</p>
+
+<h2 id="a-brief-background">A brief background</h2>
+<p>Stochastic geometry (SG) has emerged as a powerful tool for modelling and analysis of wireless cellular networks. Using the distributions of random point patterns, which are the key offerings of this subject, it is possible to derive easy-to-compute analytical expressions of key network performance metrics like coverage, rate, area-spectral efficiency and draw useful inferences avoiding computationally expensive and time-consuming system-level simulations of cellular networks. In the SG-based models, the locations of base stations (BSs) and users in a cellular network modeld are modeled using random point patterns (also known as <em>point processes</em>). The most simplest point process is known as the homogeneous Poisson point process which assumes that all the points are distributed independently and uniformly at random over a space.  Here is an example of a homogeneous PPP in $\mathbb{R}^2$.</p>
+
+<p><img src="/assets/images/pcp_post1/ppp.png" alt="Realization of an homogeneous PPP" width="300px" class="align-center" /><center>Realization of an homogeneous PPP.</center></p>
+
+<p>Most of the SG-based models of cellular networks assume that  the base stations (BSs) and users are distributed as independent homogeneous PPPs. This  means that BS and users are located independently and uniformly at random over a plane.
+  This model is known as the <em>baseline PPP model</em>. However, this model is 
+ is valid for a handful of deployment scenarios, for instance traditional macro-cellular networks, it is not a representative model for a more heterogeneous network setup where smallcells are overlaid on macro cells to fill coverage dead-zones and target user hotspots with high capacity demand.</p>
+
+<p>The point patterns of users and BSs in a heterogeneous cellular network (HetNet) are in most cases non-Poissonian, with multiple sources of spatial coupling, such as user-user, user-BS, BS-BS couplings. Among non-Poisson point processes, Poisson cluster process (PCP) closely resembles the point pattern of numerous realistic user and BS configurations in HetNets, such as users forming hotspot and smallcells under user-centric deployment. A  PCP in  $\mathbb{R}^2$ looks like this.</p>
+
+<p><img src="/assets/images/pcp_post1/pcp.png" alt="Realization of an homogeneous PPP" width="300px" class="align-center" /><center>Realization of a PCP.</center></p>
+
+<p>An important motivation to use PCP  as the spatial model of users and BSs (mostly small cell BSs) in a HetNet is its resemblence with the network  layouts considered in the 3GPP-compiant network simulators.  Also quite interestingly, unlike many other non-Poisson processes, we found that the PCP-based HetNet models are quite amenable to mathematical analysis as well. In the series of papers, we have built the theory of PCP-based network models and have found the analytical expressions of network performance metrics.</p>
+
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+
+        
+          <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time datetime="2016-07-20T00:00:00-05:00">July 20, 2016</time></p>
+        
+      </footer>
+
+      <section class="page__share">
+  
+    <h4 class="page__share-title">Share on</h4>
+  
+
+  <a href="https://twitter.com/intent/tweet?text=Poisson+Cluster+Process%3A+Theories+and+Application+in+Wireless+Network+Models%20http%3A%2F%2Flocalhost%3A4000%2FPCP%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+
+  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2FPCP%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost%3A4000%2FPCP%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+</section>
+
+
+      
+    </div>
+
+    
+  </article>
+
+  
+  
+    <div class="page__related">
+      <h4 class="page__related-title">You may also enjoy</h4>
+      <div class="grid__wrapper">
+        
+          
+            
+      </div>
+    </div>
+  
+</div>
+
+    </div>
+
+    
+
+    <div class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>Follow:</strong></li>
+    
+
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+
+    <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2019 Harpreet S. Dhillon. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.8.1/js/all.js" integrity="sha384-g5uSoOSBd7KkhAMlnQILrecXvzst9TdC09/VM+pjDTCM+1il8RHz5fKANTFFb+gQ" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML">
+</script>
+<script type="text/x-mathjax-config">
+   MathJax.Hub.Config({
+     extensions: ["tex2jax.js"],
+     jax: ["input/TeX", "output/HTML-CSS"],
+     tex2jax: {
+       inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+       displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+       processEscapes: true
+     },
+     "HTML-CSS": { availableFonts: ["TeX"] }
+   });
+</script>
+
+  </body>
+</html>
