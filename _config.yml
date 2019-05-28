@@ -233,7 +233,7 @@ plugins:
   - jekyll-feed
   - jemoji
   - jekyll-include-cache
-
+  - jekyll-remote-theme
 # mimic GitHub Pages with --safe
 whitelist:
   - jekyll-paginate
@@ -243,6 +243,7 @@ whitelist:
   - jemoji
   - jekyll-include-cache
 
+remote_theme: mmistakes/minimal-mistakes
 
 # Archives
 #  Type
