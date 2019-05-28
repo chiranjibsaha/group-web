@@ -1,0 +1,30 @@
+Chiranjib Saha:
+  name        : "Chiranjib Saha"
+  bio         : "Joined Wireless@VT as a PhD student in 2015. Interests: stochastic geometry, millimeter waves commun., machine learning."
+  avatar      : "/assets/images/chiranjib1.jpg"
+  links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:csaha@vt.edu"
+    - label: "Website"
+      icon: "fas fa-fw fa-link"
+      url: "https://chiranjibsaha.github.io"
+   # - label: "Twitter"
+   #   icon: "fab fa-fw fa-twitter-square"
+   #   url: "https://twitter.com/extravagantman"
+
+Vishnu Vardhan:
+  name        : "Vishnu Vardhan Chetlur"
+  bio         : "I am a Ph.D. student in the Bradley Department of Electrical and Computer Engineering at Virginia Tech. 
+           I received his B.E. (Hons.) degree from the Birla Institute of Technology and Science (BITS) Pilani, India, in 2013. 
+          I graduated top of his class in the department of Electrical Engineering and was awarded the institute Silver medal for being ranked second in the whole institute. 
+          I was also a recipient of the BITS merit scholarship for his excellence in academics. 
+          My research interests include wireless communication and stochastic geometry."
+  avatar      : "/assets/images/vishnu.jpg"
+  links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:cornelius@thewhip.com"
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      url: "https://twitter.com/rhymeswithsackit"
